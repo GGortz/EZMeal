@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/catalogue"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Catalogue de recette" />
+        <item
+            android:id="@+id/cate"
+            android:icon="@android:drawable/gallery_thumb"
+            android:title="Catégories" />
+        <item
+            android:id="@+id/rechavan"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Recherche avancée" />
+        <item
+            android:id="@+id/parametres"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Paramètres" />
+    </group>
+
+</menu>

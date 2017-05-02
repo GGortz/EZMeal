@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Recherche">
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="personnes"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="298dp" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre le"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="173dp" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="294dp"
+        android:text="Capacité : "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="59dp"
+        android:layout_height="26dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="173dp" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="165dp"
+        android:text="Date d'ajout : "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="208dp"
+        android:text="Temps cuisson: "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="251dp"
+        android:text="Temps préparation :"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Complexité : "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Plat : "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dessert"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Apéritif"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rechercher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Principal"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="66dp"
+        android:text="Prix : "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="59dp"
+        android:layout_height="26dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="173dp"
+        app:layout_constraintHorizontal_bias="0.609" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="255dp" />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre"
+        tools:layout_editor_absoluteY="215dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.47" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="et "
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="et"
+        tools:layout_editor_absoluteX="298dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="et "
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="215dp" />
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="et le"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="173dp" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="237dp"
+        android:layout_height="51dp"
+        android:isIndicator="false"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout
+        android:layout_width="23dp"
+        android:layout_height="499dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="369dp"></LinearLayout>
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="91dp"
+        android:layout_height="19dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="91dp"
+        android:layout_height="19dp"
+        android:ems="10"
+        android:hint="fre"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:text="€"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:text="€"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="73dp" />
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="284dp" />
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="231dp" />
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="208dp" />
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="208dp" />
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="237dp" />
+</android.support.constraint.ConstraintLayout>
