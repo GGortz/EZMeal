@@ -15,6 +15,7 @@ public class Recettes{
     private Recettes recette;
     private String prix;
     private String difficulte;
+    private int rating;
 
     public Recettes create_recette(String nom_r,int t_prep, int t_cuiss, int n_couv, String description, int ch_fr, String date, String auteur, String prix, String difficulte){
         this.nom_r = nom_r;
@@ -41,7 +42,7 @@ public class Recettes{
         return this.ch_fr;
     }
     public int getN_couv() {
-        return this.n_couv
+        return this.n_couv;
     }
     public int getT_cuiss() {
         return this.t_cuiss;
@@ -60,6 +61,7 @@ public class Recettes{
         }
 public String getPrix() {return this.prix;}
     public String getDifficulte() {return this.difficulte;}
+    public int getRating() {return this.rating;}
 
     public void setNom_r(String nom_r) {
         this.nom_r = nom_r;
@@ -69,9 +71,7 @@ public String getPrix() {return this.prix;}
         this.date = date;
     }
 
-    public void set
-
-    Ch_fr(int ch_fr) {
+    public void setCh_fr(int ch_fr) {
         this.ch_fr = ch_fr;
     }
 
@@ -80,7 +80,7 @@ public String getPrix() {return this.prix;}
     }
 
     public void setT_cuiss(int t_cuiss) {
-        this.t_cuiss = t_cuiss
+        this.t_cuiss = t_cuiss;
     }
 
     public void setT_prep(int t_prep) {
