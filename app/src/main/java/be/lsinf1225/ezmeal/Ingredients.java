@@ -12,6 +12,15 @@ public class Ingredients {
 
  public String getSouscategorie(String n){
      return this.souscategorie;
+        /*Cursor c=DBHelper.rawQuery("select Sous-catégorie from Ingrédient where Nom = ",  new String[]{n});
+        *String sc="";
+        *if(c.moveToFirst()){
+        * sc=c.getString(1);
+        * }
+        * return sc;
+         */
+
+
  }
 
  public String getCategorie(String n){

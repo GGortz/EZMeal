@@ -29,9 +29,25 @@ public Review(int id, String com, int rate){
 
     public int getRating(int id){
         return this.rating;
+        /*Cursor c=DBHelper.rawQuery("select Note from Review where Num = ",  new String[]{"id"});
+        *int somme=0;
+        *int nbre=0;
+        *while(c.moveToNext()){
+        * nbre++;
+        * somme+c.getint(1);
+        * }
+        * return somme/nbre;
+         */
     }
     public String getCommentaire(int id){
         return this.commentaire;
+        /*Cursor c=DBHelper.rawQuery("select Commentaire from Review where Num = ",  new String[]{"id"});
+        *String s="";
+        *while(c.moveToNext()){
+        * s+" "+c.getString(1);
+        * }
+        * return s;
+         */
     }
     public create_Review(int id, String com){
         //ContentValues newreview = new ContentValues();
