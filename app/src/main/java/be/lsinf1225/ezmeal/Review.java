@@ -40,7 +40,7 @@ public Review reviewConverter(Cursor c){
     }
 }
 
-}
+
 
     public Review getReview(int id){
         return reviewConverter(be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{"id"}));
