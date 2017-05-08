@@ -23,7 +23,6 @@
         <activity android:name=".Main3Activity"/>
         <activity android:name=".Main4Activity"/>
         <activity android:name=".MainActivity"/>
-        //<activity android:name=".First_activity"/>
         <activity android:name=".Inscription"/>
         <activity android:name=".Login"/>
 

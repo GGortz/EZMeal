@@ -1,4 +1,4 @@
-        package be.lsinf1225.catalogue;
+        package be.lsinf1225.ezmeal;
 
         import android.database.sqlite.*;
 
