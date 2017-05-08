@@ -1,4 +1,4 @@
-package be.lsinf1225.ezmeal.;
+package sinf1225.projetmeal;
 
 
 /**
