@@ -218,14 +218,14 @@ public class catalogue extends ActionBarActivity {
                 }
             });
 */
-            holder.retitre.setText(recettes.getNom());
-            holder.redescription.setText(recettes.getDescription());
-            holder.rett.setText(recettes.get_tt());
-            holder.reprix.setText(recettes.getPrix());
-            holder.rediff.setText(recettes.getDifficulte());
+            holder.retitre.setText(Recettes.getNom_r());
+            holder.redescription.setText(Recettes.getDescription());
+            holder.rett.setText(Recettes.get_tt());
+            holder.reprix.setText(Recettes.getPrix());
+            holder.rediff.setText(Recettes.getDifficulte());
 
             // rating bar
-            holder.rerating.setRating(recettes.getRating());
+            holder.rerating.setRating(Recettes.getRating());
 
             return convertView;
         }

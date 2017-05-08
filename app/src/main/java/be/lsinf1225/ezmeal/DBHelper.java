@@ -4,19 +4,20 @@
 
 
 public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
-
-    public String Catégorie_Catégorie;
-   // public String Catégorie_Sous-Catégorie;
-    public String
-
+    SQLiteDatabase db;
+    int old = db.getVersion();
 
     @Override  //Pour mettre à jour la version de la DB
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        //db.execSQL(VERSION);
-        onCreate(db);
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
+
     }
 
     private void onCreate(SQLiteDatabase db) {
+        //ne rien faire
+    }
+
+    private void onOpen(SQLiteDatabase db){
+        onUpgrade(db, old, old++);
     }
 
 
