@@ -1,10 +1,11 @@
 package sinf1225.projetmeal;
 
+
 /**
  * Created by User on 01-05-17.
  */
 
-public class Utilisateur {
+public class Utilisateur{
 
     private String login;
     private String password;
@@ -15,7 +16,11 @@ public class Utilisateur {
     private String city;
     private String country;
 
+
+
+
     public Utilisateur(String login,String password,String sexe,int jour, int mois, int annee,String city,String country){
+        super();
         this.login=login;
         this.password=password;
         this.sexe=sexe;
@@ -26,64 +31,58 @@ public class Utilisateur {
         this.country=country;
     }
 
-    public void connexion(String login,String secret){
-        this.login=login;
-        if(secret ==password){
-            //créer une instance du menu principale
-        }
-        else {
-            //message d'erreur;
-        }
-    }
 
-    public void inscription(String login,String password,String passwordbis,String sexe,int jour, int mois, int annee,String city,String country){
+    public String getLogin(){
+            return login;
+    }
+    public void setLogin(String login){
         this.login=login;
+    }
+    public String getPassword(){
+        return login;
+    }
+    public void setPassword(String password){
         this.password=password;
-        this.sexe=sexe;
-        this.jour=jour;
-        this.mois=mois;
+    }
+    public int getAnnee(){
+        return annee;
+    }
+    public void setAnnee(int annee){
         this.annee=annee;
-        this.city=city;
-        this.country=country;
-        if (password==passwordbis){
-            if(jour<31 && jour>0){
-                if(mois<31 && mois>0){
-                    if(annee<2018 && annee>1900){
-                        //créer une nouvelle ligne dans la base SQL
-                        //créer l'instance du menu principale
-                    }
-                    else{
-                        //message d'erreur
-                    }
-
-                }
-                else{
-                    //message d'erreur
-                }
-            }
-            else{
-                //message d'erreur
-            }
-        }
-        else{
-            //message d'erreur
-        }
-
     }
-    public void deletutilisateur(){
-        //supprimer la ligne de la DTB
+    public int getMois(){
+        return mois;
     }
-    public void modifutilisateur(String login){
-            this.login=login;
-
+    public void setMois(int mois){
+        this.mois=mois;
     }
-
-    public void modifpassword(String password){
-        this.password=password;
+    public int getJour(){
+        return jour;
     }
-    public void modifpassword(String sexe){
+    public void setJour(int jour){
+        this.jour=jour;
+    }
+    public String getSexe(){
+        return sexe;
+    }
+    public void setSexe(String sexe){
         this.sexe=sexe;
     }
+    public String getCountry(){
+        return country;
+    }
+    public void setCountry(String country){
+        this.country=country;
+    }
+    public String getCity(){
+        return city;
+    }
+    public void setCity(String city){
+        this.city=city;
+    }
+
+
+
 
 
 
