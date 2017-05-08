@@ -1,19 +1,27 @@
-        package be.lsinf1225.catalogue;
+package be.lsinf1225.ezmeal;
 
-        import android.database.sqlite.*;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import java.util.ArrayList;
+import java.util.List;
 
-
-public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
+     public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
     SQLiteDatabase db;
     int old = db.getVersion();
 
-    @Override  //Pour mettre à jour la version de la DB
+         public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+             super(context, name, factory, version);
+         }
+
+         @Override  //Pour mettre à jour la version de la DB
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
 
     }
 
     private void onCreate(SQLiteDatabase db) {
-        //ne rien faire
+        db.execSQL("CREATE TABLE Utilisateur ()");
     }
 
     private void onOpen(SQLiteDatabase db){
