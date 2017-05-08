@@ -1,13 +1,24 @@
 package be.lsinf1225.ezmeal;
 
 
+import android.database.Cursor;
 
 public class Ingredients {
     private String nomingredient;
     private String souscategorie;
 
+    public Ingredients (String n, String sc){
+        this.nomingredient=n;
+        this.souscategorie=sc;
+    }
+
  public String getNomingredient(){
      return this.nomingredient;
+ }
+
+
+ public Ingredients ingredientConverter(Cursor c){
+
  }
 
  public String getSouscategorie(String n){

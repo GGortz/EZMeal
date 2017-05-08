@@ -1,11 +1,14 @@
 package be.lsinf1225.ezmeal;
 
-//test
+
+import android.database.Cursor;
 
 public class Review {
     private int iD_recette;
     private String commentaire;
     private int rating;
+    private String auteur;
+    private String date;
 
 public Review(int id, String com){
     this.iD_recette=id;
@@ -26,6 +29,22 @@ public Review(int id, String com, int rate){
     this.commentaire=com;
 }
 
+public Review reviewConverter(Cursor c){
+    while(c.moveToNext()) {
+        this.iD_recette = c.getInt(1);
+        this.auteur = c.getString(0);
+        this.date = c.getString(2);
+        this.rating = c.getInt(3);
+        this.commentaire = c.getString(4);
+    }
+}
+
+}
+
+    public Review getReview(int id){
+        return reviewConverter(be.lsinf1225.catalogue.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{"id"}));
+
+    }
 
     public int getRating(int id){
         return this.rating;
