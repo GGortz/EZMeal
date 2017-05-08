@@ -74,17 +74,18 @@ public class pageacceuil extends AppCompatActivity
         //Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.parametres) {
-             Intent parametre = new Intent(pageacceuil, inscription.class);
-            startActivity(parametre);
-         } else if (id == R.id.catalogue) {
-            Intent catalogue = new Intent(pageacceuil, be.lsinf1225.ezmeal.catalogue);
+      // if (id == R.id.parametres) {
+        //     Intent parametre = new Intent(pageacceuil, inscription.class);
+          //  startActivity(parametre);
+        // } else
+             if (id == R.id.catalogue) {
+            Intent catalogue = new Intent(this, be.lsinf1225.ezmeal.catalogue.class);
             startActivity(catalogue);
          } else if (id == R.id.cate) {
-            Intent cate = new Intent(pageacceuil, MainActivity);
+            Intent cate = new Intent(this, MainActivity.class);
             startActivity(cate);
          } else if (id == R.id.rechavan) {
-            Intent rechercheavance = new Intent(pageacceuil, Recherche);
+            Intent rechercheavance = new Intent(this, Recherche.class);
             startActivity(rechercheavance);
          }
 
