@@ -11,7 +11,7 @@ import android.widget.Spinner;
 
 
 /**
- * Created  by User on 24-04-17.
+ * Created by User on 24-04-17.
  */
 
 public class Inscription extends AppCompatActivity {
