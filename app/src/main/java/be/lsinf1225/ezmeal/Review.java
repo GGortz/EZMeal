@@ -75,7 +75,7 @@ public Review reviewConverter(Cursor c){
         newreview.put("Num", id);
       //  newreview.put("Date", getDate(););
         newreview.put("Commentaire", com);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
     public void create_Review(int id, int rate){
         ContentValues newreview = new ContentValues();
@@ -83,7 +83,7 @@ public Review reviewConverter(Cursor c){
         newreview.put("Num", id);
     //    newreview.put("Date", getDate(););
         newreview.put("Note", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
     public void create_Review(int id, int rate, String com){
         ContentValues newreview = new ContentValues();
@@ -92,7 +92,7 @@ public Review reviewConverter(Cursor c){
      //   newreview.put("Date", getDate(););
         newreview.put("Commentaire", com);
         newreview.put("Note", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
 
 
