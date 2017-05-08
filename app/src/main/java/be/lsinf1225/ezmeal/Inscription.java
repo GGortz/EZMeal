@@ -1,5 +1,6 @@
 package be.lsinf1225.ezmeal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,14 +25,14 @@ public class Inscription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         
         //Button Enter
-        btnEnter = (Button) findViewById(R.id.BtnEnter);//Surement changer BtnEnter
+        btnEnter = (Button) findViewById(R.id.btnConnexion);//Surement changer BtnEnter
         btnEnter.setOnClickListener(btnEnterListener);
         
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscription);
 
         spinSexe=(Spinner) findViewById(R.id.SpinSex);
-        adapSex = ArrayAdapter.createFromResource(this,R.array.sexe_array,android.R.layout.simple_spinner_item);
+        adapSex = ArrayAdapter.createFromResource(this,R.array.SpinSex,android.R.layout.simple_spinner_item);
         adapSex.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinSexe.setAdapter(adapSex);
         spinSexe.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -53,7 +54,7 @@ public class Inscription extends AppCompatActivity {
     private View.OnClickListener btnEnterListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(Inscription.this,pageaccueil.class);
+            Intent intent = new Intent(Inscription.this, pageacceuil.class);
             startActivity(intent);
         }
 };
