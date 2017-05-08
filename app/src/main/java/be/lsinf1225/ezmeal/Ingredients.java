@@ -24,7 +24,7 @@ public class Ingredients {
 
  public String getSouscategorie(String n){
      return this.souscategorie;
-        Cursor c= be.lsinf1225.catalogue.DBHelper.getReadableDatabase().rawQuery("select Sous-catégorie from Ingrédient where Nom = ",  new String[]{n});
+        Cursor c= be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("select Sous-catégorie from Ingrédient where Nom = ",  new String[]{n});
         String sc="";
         if(c.moveToFirst()){
          sc=c.getString(1);
@@ -35,7 +35,7 @@ public class Ingredients {
 
  }
 
- public String getCategorie(String n){Souscategorie.getCategorie(this.souscategorie);
+ public String getCategorie(String n){souscategorie.getCategorie(this.souscategorie);
  }
 
  public void createIngredient(String n, String sc){
@@ -43,13 +43,13 @@ public class Ingredients {
      ContentValues newingredient = new ContentValues();
      newingredient.put("Nom", n);
      newingredient.put("Sous-catégorie", sc);
-     be.lsinf1225.catalogue.DBHelper.insert("Ingrédient", null, newingredient);
+     be.lsinf1225.ezmeal.DBHelper.insert("Ingrédient", null, newingredient);
  }
 
 
  public void del_ingredient(String n){
      //Faire commande SQL
-     be.lsinf1225.catalogue.DBHelper.delete("Ingrédient", "Nom", n);
+     be.lsinf1225.ezmeal.DBHelper.delete("Ingrédient", "Nom", n);
 
  }
 
@@ -58,7 +58,7 @@ public class Ingredients {
      ContentValues newingredient = new ContentValues();
      newingredient.put("Nom", n);
      newingredient.put("Sous-catégorie", sc);
-     be.lsinf1225.catalogue.DBHelper.insert("Ingrédient", null, newingredient);
+     be.lsinf1225.ezmeal.DBHelper.insert("Ingrédient", null, newingredient);
  }
 
 
