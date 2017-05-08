@@ -43,7 +43,8 @@
         android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView14"
@@ -55,8 +56,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintLeft_toRightOf="@+id/textView13"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -66,7 +67,8 @@
         android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -79,7 +81,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintLeft_toRightOf="@+id/textView15"
         android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -89,7 +93,8 @@
         android:text="@string/aRecPrix"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        android:layout_marginStart="16dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -101,7 +106,9 @@
         app:layout_constraintLeft_toRightOf="@+id/textView17"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView18"
@@ -111,7 +118,8 @@
         android:text="@string/aRecTmps"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView19"
@@ -124,7 +132,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView20"
@@ -134,7 +144,8 @@
         android:text="@string/aRecNmbreCouv"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -147,7 +158,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -157,7 +170,8 @@
         android:text="@string/aRecComp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView23"
@@ -170,7 +184,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -180,7 +196,8 @@
         android:text="@string/aRecEtape"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -193,7 +210,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         app:layout_constraintLeft_toRightOf="@+id/textView2"
         android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>
