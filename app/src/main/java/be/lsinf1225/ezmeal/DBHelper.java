@@ -23,7 +23,7 @@ public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
 
 
 
-    //POur accéder à la DB de n'importe ou
+    //Pour accéder à la DB de n'importe ou
     //SQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
     // context :
     // name : nom de la DB
