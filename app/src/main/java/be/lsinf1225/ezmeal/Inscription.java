@@ -16,9 +16,17 @@ import android.widget.Spinner;
 public class Inscription extends AppCompatActivity {
     Spinner spinSexe;
     ArrayAdapter<CharSequence> adapSex;
+    
+    private Button btnEnter;//prochain layout
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
+        //Button Enter
+        btnEnter = (Button) findViewById(R.id.BtnEnter);//Surement changer BtnEnter
+        btnEnter.setOnClickListener(btnEnterListener);
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscription);
 
@@ -38,4 +46,19 @@ public class Inscription extends AppCompatActivity {
             }
         });
     }
+    
+    
+    // Liaison avec prochain layout pageaccueil.java
+
+    private View.OnClickListener btnEnterListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(Inscription.this,pageaccueil.class);
+            startActivity(intent);
+        }
+};
+    
+    
+    
+    
 }
