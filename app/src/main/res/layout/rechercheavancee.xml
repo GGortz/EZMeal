@@ -1,302 +1,271 @@
-<?xml version="1.0" encoding="utf-8"?>
+getCategorie<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Recherche">
+    tools:context="Recherche"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="personnes"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="298dp" />
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entre le"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="140dp" />
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="130dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="294dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Capacité : "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="59dp"
-        android:layout_height="26dp"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="152dp" />
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="130dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="165dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Date d'ajout : "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="8dp" />
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="146dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="208dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Temps cuisson: "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="185dp"
+        tools:layout_editor_absoluteX="8dp" />
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="182dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="251dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Temps préparation :"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="217dp"
+        tools:layout_editor_absoluteX="8dp" />
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="130dp"
-        android:layout_height="49dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Complexité : "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="88dp"
+        tools:layout_editor_absoluteX="8dp" />
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="78dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Plat : "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Dessert"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="296dp" />
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Apéritif"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="195dp" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
         android:text="Rechercher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginEnd="16dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Principal"
-        app:layout_constraintHorizontal_bias="0.244"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="84dp" />
     <TextView
         android:id="@+id/textView"
-        android:layout_width="78dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Prix : "
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="48dp"
+        tools:layout_editor_absoluteX="8dp" />
     <EditText
         android:id="@+id/editText"
-        android:layout_width="59dp"
-        android:layout_height="26dp"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="173dp"
-        app:layout_constraintHorizontal_bias="0.609" />
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="197dp" />
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entre"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintRight_toLeftOf="@+id/editText8"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entre"
-        tools:layout_editor_absoluteY="215dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.47" />
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Entre"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="73dp" />
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="et "
-        tools:layout_editor_absoluteX="237dp"
-        tools:layout_editor_absoluteY="73dp" />
+        tools:layout_editor_absoluteY="186dp"
+        tools:layout_editor_absoluteX="162dp" />
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="et"
-        tools:layout_editor_absoluteX="298dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
+        app:layout_constraintRight_toLeftOf="@+id/editText12"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="et "
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="215dp" />
+        tools:layout_editor_absoluteY="186dp"
+        tools:layout_editor_absoluteX="279dp" />
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="et le"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteY="152dp"
+        tools:layout_editor_absoluteX="265dp" />
     <RatingBar
         android:id="@+id/ratingBar"
-        android:layout_width="237dp"
-        android:layout_height="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:isIndicator="false"
-        tools:layout_editor_absoluteY="105dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        tools:layout_editor_absoluteY="88dp"
+        tools:layout_editor_absoluteX="135dp" />
     <LinearLayout
-        android:layout_width="23dp"
-        android:layout_height="499dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="369dp"></LinearLayout>
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="91dp"
-        android:layout_height="19dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="73dp" />
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="91dp"
-        android:layout_height="19dp"
-        android:ems="10"
-        android:hint="fre"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="73dp" />
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="40dp"
-        android:layout_height="26dp"
-        android:text="€"
-        tools:layout_editor_absoluteX="352dp"
-        tools:layout_editor_absoluteY="73dp" />
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="40dp"
-        android:layout_height="26dp"
-        android:text="€"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="73dp" />
+        tools:layout_editor_absoluteX="369dp"
+        tools:layout_editor_absoluteY="256dp"></LinearLayout>
+
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="85dp"
+        android:layout_width="159dp"
         android:layout_height="35dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/textView11"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView9"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
     <EditText
         android:id="@+id/editText8"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="7dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toLeftOf="@+id/textView12"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="244dp" />
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="231dp" />
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="411dp" />
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="208dp" />
+        tools:layout_editor_absoluteY="185dp"
+        tools:layout_editor_absoluteX="303dp" />
     <EditText
         android:id="@+id/editText9"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="208dp" />
+        tools:layout_editor_absoluteY="186dp"
+        tools:layout_editor_absoluteX="201dp" />
     <EditText
         android:id="@+id/editText12"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="237dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="316dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteY="48dp"
+        tools:layout_editor_absoluteX="72dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteY="48dp"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteY="48dp"
+        tools:layout_editor_absoluteX="282dp" />
 </android.support.constraint.ConstraintLayout>
