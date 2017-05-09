@@ -9,7 +9,7 @@ public class Categorie {
     private String nom_cat;
 
     public Categorie(String nom_cat,Sous_Categorie[] s_cat) {
-        this.nom_cat = str_cat;
+        this.nom_cat = nom_cat;
         this.s_cat= s_cat;
     }
 
@@ -30,5 +30,4 @@ public class Categorie {
 
 
 
-}
 }
