@@ -51,7 +51,7 @@ public class Login extends AppCompatActivity {
         }
         mUtilisateurList = mDBHelper.getUtilisateur();
         adapter= new ListUtilisateurAdapter(this, mUtilisateurList);
-        btnEnter.setOnClickListener(btnEnterListener);
+       // btnEnter.setOnClickListener(btnEnterListener);
 
 
     }
