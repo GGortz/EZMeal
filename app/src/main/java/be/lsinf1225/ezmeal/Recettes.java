@@ -28,7 +28,7 @@ public class Recettes{
         this.auteur=auteur;
         this.prix=prix;
         this.difficulte=difficulte;
-
+        return this;
     }
 
 

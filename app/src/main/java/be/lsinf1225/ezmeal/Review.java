@@ -40,7 +40,7 @@ public Review reviewConverter(Cursor c){
     }
 }
 
-}
+
 
     public Review getReview(int id){
         return reviewConverter(be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{"id"}));
@@ -54,7 +54,7 @@ public Review reviewConverter(Cursor c){
         int nbre=0;
         while(c.moveToNext()){
          nbre++;
-         somme+c.getInt(1);
+         somme=somme+c.getInt(1);
          }
          return (int) somme/nbre;
 
@@ -64,35 +64,35 @@ public Review reviewConverter(Cursor c){
         Cursor c= be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("select Commentaire from Review where Num = ",  new String[]{"id"});
         String s="";
         while(c.moveToNext()){
-         s+" "+c.getString(1);
+        s= s+" "+c.getString(1);
         }
          return s;
 
     }
-    public create_Review(int id, String com){
+    public void create_Review(int id, String com){
         ContentValues newreview = new ContentValues();
-        newreview.put("User", login.getUtilisateur(););
-        newreview.put("Num"", id);
-        newreview.put("Date", getDate(););
-        newreview.put("Commentaire", com);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
-    }
-    public create_Review(int id, int rate){
-        ContentValues newreview = new ContentValues();
-        newreview.put("User", login.getUtilisateur(););
-        newreview.put("Num"", id);
-        newreview.put("Date", getDate(););
-        newreview.put("Note"", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
-    }
-    public create_Review(int id, int rate, String com){
-        ContentValues newreview = new ContentValues();
-        newreview.put("User", login.getUtilisateur(););
+     //   newreview.put("User", login.getUtilisateur(););
         newreview.put("Num", id);
-        newreview.put("Date", getDate(););
+      //  newreview.put("Date", getDate(););
+        newreview.put("Commentaire", com);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
+    }
+    public void create_Review(int id, int rate){
+        ContentValues newreview = new ContentValues();
+    //    newreview.put("User", login.getUtilisateur(););
+        newreview.put("Num", id);
+    //    newreview.put("Date", getDate(););
+        newreview.put("Note", rate);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
+    }
+    public void create_Review(int id, int rate, String com){
+        ContentValues newreview = new ContentValues();
+     //   newreview.put("User", login.getUtilisateur(););
+        newreview.put("Num", id);
+     //   newreview.put("Date", getDate(););
         newreview.put("Commentaire", com);
         newreview.put("Note", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert(Review, null, newreview);
+        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
 
 

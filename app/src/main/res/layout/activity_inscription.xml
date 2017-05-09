@@ -27,6 +27,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="373dp"
         android:layout_height="428dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="0dp"
@@ -34,12 +35,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblInscription"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_gravity="center">
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,18 +51,19 @@
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/login2"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -70,25 +71,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center" />
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/mot_de_passe"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -96,25 +97,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/r_peter_le_mot_de_passe"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -122,47 +123,48 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblSexe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
                 android:text="Sexe:"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <Spinner
                 android:id="@+id/SpinSex"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="0dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="0dp" />
+
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/jour_de_naissance"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -170,25 +172,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/mois_de_naissance"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -196,25 +198,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/annee_de_naissance"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -222,25 +224,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/ville"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
@@ -248,25 +250,25 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <TextView
                 android:id="@+id/lblNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/pays"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="33dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="33dp" />
 
             <EditText
                 android:id="@+id/txtLogin"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
                 android:ems="10"
@@ -274,13 +276,13 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="164dp"
-                android:layout_gravity="center"/>
+                tools:layout_editor_absoluteY="164dp" />
 
             <Button
                 android:id="@+id/btnConnexion"
                 android:layout_width="wrap_content"
                 android:layout_height="68dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="40dp"
@@ -288,8 +290,7 @@
                 android:textSize="40dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtPassword"
-                android:layout_gravity="center"/>
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
 
         </LinearLayout>
