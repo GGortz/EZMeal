@@ -11,7 +11,7 @@ import be.lsinf1225.ezmeal.Model.Utilisateur;
 
 public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
 
-    public static final String DBNAME="DBV2(2).sqlite";
+    public static final String DBNAME="EZmeal.sqlite";
     public static final String DBLocation="data/data/be.lsinf1225.ezmeal/databases";
     private Context mContext;
     private SQLiteDatabase mDatabase;
