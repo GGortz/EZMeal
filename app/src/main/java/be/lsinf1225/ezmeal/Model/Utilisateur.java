@@ -19,7 +19,7 @@ public class Utilisateur{
 
 
 
-    public Utilisateur(String login,String password,String sexe,int jour, int mois, int annee,String city,String country){
+    public Utilisateur(String login,String password,String city,String country,String sexe,int jour, int mois, int annee){
         super();
         this.login=login;
         this.password=password;
