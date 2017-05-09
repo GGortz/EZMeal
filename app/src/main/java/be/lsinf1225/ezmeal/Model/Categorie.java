@@ -5,29 +5,28 @@ package be.lsinf1225.ezmeal.Model;
  */
 
 public class Categorie {
-    private Sous_Categorie[] s_cat;
+    private String s_cat;
     private String nom_cat;
 
-    public Categorie(String nom_cat,Sous_Categorie[] s_cat) {
+    public Categorie(String nom_cat, String s_cat) {
         this.nom_cat = nom_cat;
-        this.s_cat= s_cat;
+        this.s_cat = s_cat;
     }
 
-    public void set_categorie(String nom) {
-        this.nom_cat = nom;
+    public String getNom_cat() {
+        return nom_cat;
     }
 
-
-    public String get_nom_cat()
-    {
-        return this.nom_cat;
+    public String getS_cat() {
+        return s_cat;
     }
 
-    public Sous_Categorie[] get_scat() {
-        return this.s_cat;
+    public void setNom_cat(String nom_cat) {
+        this.nom_cat = nom_cat;
     }
 
-
-
+    public void setS_cat(String s_cat) {
+        this.s_cat = s_cat;
+    }
 
 }

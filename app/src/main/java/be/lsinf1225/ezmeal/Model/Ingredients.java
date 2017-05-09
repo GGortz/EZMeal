@@ -17,7 +17,7 @@ public class Ingredients {
      return this.nomingredient;
  }
 
-
+/*
  public Ingredients ingredientConverter(Cursor c){
 
  }
@@ -60,7 +60,7 @@ public class Ingredients {
      newingredient.put("Sous-catégorie", sc);
      be.lsinf1225.ezmeal.DBHelper.insert("Ingrédient", null, newingredient);
  }
-
+*/
 
 
 }

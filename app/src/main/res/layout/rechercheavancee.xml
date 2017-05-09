@@ -1,4 +1,4 @@
-getCategorie<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +7,7 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
     tools:context="Recherche"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -18,10 +19,13 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
         android:text="Entre le"
-        tools:layout_editor_absoluteY="153dp"
+        app:layout_constraintRight_toLeftOf="@+id/editText"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
         tools:layout_editor_absoluteX="140dp" />
     <TextView
         android:id="@+id/textView9"
@@ -39,69 +43,90 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:layout_height="25dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="152dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date d'ajout : "
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="153dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Temps cuisson: "
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="185dp"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Temps préparation :"
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="217dp"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Complexité : "
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="88dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Plat : "
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dessert"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="296dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Apéritif"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="195dp" />
+        app:layout_constraintRight_toLeftOf="@+id/checkBox3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rechercher"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="21dp"
         app:layout_constraintTop_toBottomOf="@+id/editText7"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -112,24 +137,31 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Principal"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="84dp" />
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox4"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prix : "
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="48dp"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
     <EditText
         android:id="@+id/editText"
         android:layout_width="60dp"
         android:layout_height="25dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteY="153dp"
-        tools:layout_editor_absoluteX="197dp" />
+        app:layout_constraintRight_toLeftOf="@+id/textView18"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
@@ -140,14 +172,17 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintLeft_toRightOf="@+id/textView4"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0" />
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entre"
-        tools:layout_editor_absoluteY="186dp"
-        tools:layout_editor_absoluteX="162dp" />
+        app:layout_constraintRight_toLeftOf="@+id/editText9"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <TextView
         android:id="@+id/textView12"
@@ -155,7 +190,7 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:layout_height="wrap_content"
         android:text="et"
         app:layout_constraintRight_toLeftOf="@+id/editText12"
-        android:layout_marginRight="0dp"
+        android:layout_marginRight="5dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
     <TextView
@@ -163,28 +198,35 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="et "
-        tools:layout_editor_absoluteY="186dp"
-        tools:layout_editor_absoluteX="279dp" />
+        app:layout_constraintRight_toLeftOf="@+id/editText10"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="et le"
-        tools:layout_editor_absoluteY="152dp"
-        tools:layout_editor_absoluteX="265dp" />
+        app:layout_constraintRight_toLeftOf="@+id/editText3"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:isIndicator="false"
-        tools:layout_editor_absoluteY="88dp"
-        tools:layout_editor_absoluteX="135dp" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="369dp"
-        tools:layout_editor_absoluteY="256dp"></LinearLayout>
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="8dp" />
+
+
+
+
+
 
     <EditText
         android:id="@+id/editText7"
@@ -196,8 +238,9 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintRight_toLeftOf="@+id/textView11"
         android:layout_marginRight="8dp"
         app:layout_constraintLeft_toRightOf="@+id/textView9"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="1.0" />
     <EditText
         android:id="@+id/editText8"
         android:layout_width="52dp"
@@ -209,30 +252,27 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:layout_editor_absoluteX="244dp" />
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="411dp" />
+
     <EditText
         android:id="@+id/editText10"
         android:layout_width="73dp"
         android:layout_height="20dp"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteY="185dp"
-        tools:layout_editor_absoluteX="303dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
     <EditText
         android:id="@+id/editText9"
         android:layout_width="70dp"
         android:layout_height="18dp"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteY="186dp"
-        tools:layout_editor_absoluteX="201dp" />
+        app:layout_constraintRight_toLeftOf="@+id/textView19"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
     <EditText
         android:id="@+id/editText12"
         android:layout_width="60dp"
@@ -249,23 +289,39 @@ getCategorie<?xml version="1.0" encoding="utf-8"?>
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="48dp"
-        tools:layout_editor_absoluteX="72dp" />
+        android:text="Bon Marché"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox5"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        app:layout_constraintHorizontal_bias="0.513" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="48dp"
-        tools:layout_editor_absoluteX="179dp" />
+        android:text="Moyen"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox6"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.932" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="48dp"
-        tools:layout_editor_absoluteX="282dp" />
+        android:text="Elevé"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
 </android.support.constraint.ConstraintLayout>

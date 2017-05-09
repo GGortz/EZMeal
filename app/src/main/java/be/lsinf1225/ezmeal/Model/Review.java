@@ -38,11 +38,12 @@ public Review reviewConverter(Cursor c){
         this.rating = c.getInt(3);
         this.commentaire = c.getString(4);
     }
+    return this;
 }
 
+/*
 
-
-    public Review getReview(int id){
+   public Review getReview(int id){
         return reviewConverter(be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{"id"}));
 
     }
@@ -95,8 +96,6 @@ public Review reviewConverter(Cursor c){
         be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
 
-
-
-
+*/
 
 }
