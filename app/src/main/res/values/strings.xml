@@ -87,6 +87,14 @@
 
     </string-array>
 
+    <string name="app_name">Catalogue</string>
+    <string-array name="catalogue">
+        <item>Poulet au champignon</item>
+        <item>Houmous</item>
+        <item>Banana Split</item>
+        <item>Lasagne Bolognaise</item>
+    </string-array>
+
 
     <string-array name="SpinSex">
         <item>Homme</item>
