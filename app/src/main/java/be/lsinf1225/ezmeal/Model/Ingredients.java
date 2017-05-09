@@ -1,4 +1,4 @@
-package be.lsinf1225.ezmeal;
+package be.lsinf1225.ezmeal.Model;
 
 
 import android.content.ContentValues;

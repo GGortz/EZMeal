@@ -1,4 +1,4 @@
-package be.lsinf1225.ezmeal;
+package be.lsinf1225.ezmeal.Model;
 
 /**
  * Created by louis on 7/05/17.
