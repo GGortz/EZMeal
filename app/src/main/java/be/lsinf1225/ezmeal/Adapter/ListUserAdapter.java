@@ -5,4 +5,5 @@ package be.lsinf1225.ezmeal.Adapter;
  */
 
 public class ListUserAdapter {
+    //create
 }
