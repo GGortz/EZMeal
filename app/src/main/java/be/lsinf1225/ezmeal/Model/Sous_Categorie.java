@@ -19,7 +19,7 @@ public class Sous_Categorie {
     }
     public String get_nom_scat(Sous_Categorie s_cat){
 
-        return s_cat.nom_cat;
+        return s_cat.nom_scat;
     }
     public Categorie get_cat(){
         return this.cat;
