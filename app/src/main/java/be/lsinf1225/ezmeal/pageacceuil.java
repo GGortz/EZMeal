@@ -79,7 +79,7 @@ public class pageacceuil extends AppCompatActivity
           //  startActivity(parametre);
         // } else
              if (id == R.id.catalogue) {
-            Intent catalogue = new Intent(this, be.lsinf1225.ezmeal.catalogue.class);
+            Intent catalogue = new Intent(this, be.lsinf1225.ezmeal.Catalogue.class);
             startActivity(catalogue);
          } else if (id == R.id.cate) {
             Intent cate = new Intent(this, MainActivity.class);

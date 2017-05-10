@@ -21,24 +21,26 @@ import be.lsinf1225.ezmeal.Model.Utilisateur;
 
 public class Login extends AppCompatActivity {
 
-    private EditText txtLogin=null;
-    private EditText txtPassword=null;
-    private Button btnEnter;
-    private ListUtilisateurAdapter adapter;
-    private List<Utilisateur> mUtilisateurList;
-    private DBHelper mDBHelper;
+    //private EditText txtLogin = null;
+    //private EditText txtPassword = null;
+    //private Button btnEnter;
+    //private ListUtilisateurAdapter adapter;
+    //private List<Utilisateur> mUtilisateurList;
+    //private DBHelper mDBHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        txtLogin=(EditText)findViewById(R.id.txtLogin);
-        txtPassword=(EditText)findViewById(R.id.txtPassword);
-        btnEnter=(Button)findViewById(R.id.btnConnexion);
-        mDBHelper = new DBHelper(this);
-
-        File database = getApplicationContext().getDatabasePath(DBHelper.DBNAME);
+        //  txtLogin = (EditText) findViewById(R.id.txtLogin);
+        //txtPassword = (EditText) findViewById(R.id.txtPassword);
+        //btnEnter = (Button) findViewById(R.id.btnConnexion);
+       // mDBHelper = new DBHelper(this);
+    }
+}
+/*
+       File database = getApplicationContext().getDatabasePath(DBHelper.DBNAME);
         if(false == database.exists()){
             mDBHelper.getReadableDatabase();
             //copydb
@@ -51,7 +53,7 @@ public class Login extends AppCompatActivity {
         }
         mUtilisateurList = mDBHelper.getUtilisateur();
         adapter= new ListUtilisateurAdapter(this, mUtilisateurList);
-       // btnEnter.setOnClickListener(btnEnterListener);
+       btnEnter.setOnClickListener(btnEnterListener);
 
 
     }
@@ -87,3 +89,4 @@ public class Login extends AppCompatActivity {
         }
     };
 }
+*/

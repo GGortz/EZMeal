@@ -24,14 +24,10 @@ public class Catalogue extends AppCompatActivity {
                 catalogue.setOnItemClickListener(new AdapterView.OnItemClickListener(){
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
                                 Intent intent = new Intent(Catalogue.this, AfficherRecette.class);
-                                intent.putExtra("categories", catalogue.getItemAtPosition(i).toString());
+                                //intent.putExtra("categories", catalogue.getItemAtPosition(i).toString());
                                 startActivity(intent);
                         }
                 });
-
-
-
-
 
                 catalogue.setAdapter(catalogueAdapter);
 
@@ -39,3 +35,4 @@ public class Catalogue extends AppCompatActivity {
 
         }
 }
+

@@ -15,7 +15,11 @@ public class DBHelper extends android.database.sqlite.SQLiteOpenHelper{
     public static final String DBLocation="data/data/be.lsinf1225.ezmeal/databases";
     private Context mContext;
     private SQLiteDatabase mDatabase;
-
+    //public static final String METIER_TABLE_CREATE =
+      //      "CREATE TABLE " + METIER_TABLE_NAME + " (" +
+        //            METIER_KEY + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+          //          METIER_INTITULE + " TEXT, " +
+            //        METIER_SALAIRE + " REAL);";
     //final static String T_Utilisateur = "Utilisateur";
       //      final static String C_Login = "C_Login";
         //    final static String C_Password = "C_Password";
