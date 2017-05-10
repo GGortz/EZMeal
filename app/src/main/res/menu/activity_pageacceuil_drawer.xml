@@ -15,10 +15,6 @@
             android:id="@+id/rechavan"
             android:icon="@android:drawable/ic_menu_search"
             android:title="Recherche avancée" />
-        <item
-            android:id="@+id/parametres"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Paramètres" />
     </group>
 
 </menu>

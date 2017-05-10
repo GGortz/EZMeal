@@ -19,7 +19,6 @@ public class Inscription extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapSex;
     
     private Button btnEnter;//prochain layout
-    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
