@@ -53,14 +53,16 @@ public ArrayList<Review> reviewConverter(Cursor c){
 }
 
 
-
-   public Review getListeReview(int id){
-        return reviewConverter(be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{Integer.toString(id)}));
+    //Retourne la liste de Review de la recette
+   public ArrayList<Review> getListeReview(int id){
+        return reviewConverter(be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num = ", new String[]{Integer.toString(id)}));
     }
 
-    public int getRating(int id){
+
+    //Retourne la moyenne d'une recette sous forme de int
+    public int getMoyenneRecette(int id){
         return this.rating;
-        Cursor c= be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("select Note from Review where Num = ",  new String[]{Integer.toString(id)});
+        Cursor c= be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("SELECT Note FROM Review WHERE Num = ",  new String[]{Integer.toString(id)});
         int somme=0;
         int nbre=0;
         c.moveToFirst();
@@ -72,9 +74,7 @@ public ArrayList<Review> reviewConverter(Cursor c){
 
     }
 
-
-
-
+    //Retourne les commentaires d'une recette sous forme de String
     public String getCommentaire(int id){   //ok
         Cursor c= be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("select Commentaire from Review where Num = ",  new String[]{Integer.toString(id)});
         String s="";
@@ -85,6 +85,8 @@ public ArrayList<Review> reviewConverter(Cursor c){
         return s;
 
     }
+
+    //Ajoute une review (commentaire) pour la recette avec l'id
     public void create_Review(int id, String com){    //ok
         Calendar c = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
@@ -96,6 +98,8 @@ public ArrayList<Review> reviewConverter(Cursor c){
         newreview.put("Commentaire", com);
         be.lsinf1225.ezmeal.Database.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
+
+    //Ajoute une review (rating) à la recette avec l'id
     public void create_Review(int id, int rate){   //ok
         Calendar c = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
@@ -107,6 +111,9 @@ public ArrayList<Review> reviewConverter(Cursor c){
         newreview.put("Note", rate);
         be.lsinf1225.ezmeal.Database.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
+
+
+    //Ajoute une review (commentaire, rating) à la recette avec l'id
     public void create_Review(int id, int rate, String com){   //ok
         Calendar c = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
