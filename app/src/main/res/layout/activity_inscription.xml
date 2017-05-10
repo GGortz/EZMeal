@@ -48,7 +48,7 @@
 
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -74,7 +74,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblMDP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -86,7 +86,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtMDP"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -100,7 +100,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblMDP2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -112,7 +112,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtMDP2"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -149,7 +149,7 @@
 
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblJour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -161,7 +161,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtJour"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -175,7 +175,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblMois"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -187,7 +187,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtMois"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -201,7 +201,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblAnnee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -213,7 +213,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtAnnee"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -227,7 +227,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblVille"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -239,7 +239,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtVille"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
@@ -253,7 +253,7 @@
                 tools:layout_editor_absoluteY="164dp" />
 
             <TextView
-                android:id="@+id/lblNom"
+                android:id="@+id/lblPays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -265,7 +265,7 @@
                 tools:layout_editor_absoluteY="33dp" />
 
             <EditText
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtPays"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"

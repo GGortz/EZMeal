@@ -91,7 +91,5 @@
     <string-array name="SpinSex">
         <item>Homme</item>
         <item>Femme</item>
-
-
     </string-array>
 </resources>

@@ -23,13 +23,12 @@ public class Inscription extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        
+      super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_inscription);
+
         //Button Enter
         btnEnter = (Button) findViewById(R.id.btnConnexion);//Surement changer BtnEnter
         btnEnter.setOnClickListener(btnEnterListener);
-        
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inscription);
 
         spinSexe=(Spinner) findViewById(R.id.SpinSex);
         adapSex = ArrayAdapter.createFromResource(this,R.array.SpinSex,android.R.layout.simple_spinner_item);
