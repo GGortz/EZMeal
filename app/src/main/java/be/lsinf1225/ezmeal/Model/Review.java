@@ -3,6 +3,11 @@ package be.lsinf1225.ezmeal.Model;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Review {
     private int iD_recette;
@@ -30,72 +35,91 @@ public Review(int id, String com, int rate){
     this.commentaire=com;
 }
 
-public Review reviewConverter(Cursor c){
-    while(c.moveToNext()) {
-        this.iD_recette = c.getInt(1);
-        this.auteur = c.getString(0);
-        this.date = c.getString(2);
-        this.rating = c.getInt(3);
-        this.commentaire = c.getString(4);
+
+public ArrayList<Review> reviewConverter(Cursor c){
+    ArrayList<Review> review=ArrayList<~>;
+    c.moveToFirst();
+    while(!c.isAfterLast()) {
+        Review revue = null;
+        revue.iD_recette = c.getInt(1);
+        revue.auteur = c.getString(0);
+        revue.date = c.getString(2);
+        revue.rating = c.getInt(3);
+        revue.commentaire = c.getString(4);
+        review.add(revue);
+        c.moveToNext();
     }
-    return this;
+    return review;
 }
 
-/*
 
-   public Review getReview(int id){
-        return reviewConverter(be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{"id"}));
 
+   public Review getListeReview(int id){
+        return reviewConverter(be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("SELECT * FROM Review WHERE Num=", new String[]{Integer.toString(id)}));
     }
 
     public int getRating(int id){
         return this.rating;
-        Cursor c= be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("select Note from Review where Num = ",  new String[]{String.valueOf(id)});
+        Cursor c= be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("select Note from Review where Num = ",  new String[]{Integer.toString(id)});
         int somme=0;
         int nbre=0;
-        while(c.moveToNext()){
+        c.moveToFirst();
+        while(!c.isAfterLast()){
          nbre++;
          somme=somme+c.getInt(1);
          }
          return (int) somme/nbre;
 
     }
-    public String getCommentaire(int id){
-        return this.commentaire;
-        Cursor c= be.lsinf1225.ezmeal.DBHelper.getReadableDatabase().rawQuery("select Commentaire from Review where Num = ",  new String[]{"id"});
+
+
+
+
+    public String getCommentaire(int id){   //ok
+        Cursor c= be.lsinf1225.ezmeal.Database.DBHelper.getReadableDatabase().rawQuery("select Commentaire from Review where Num = ",  new String[]{Integer.toString(id)});
         String s="";
-        while(c.moveToNext()){
-        s= s+" "+c.getString(1);
+        c.moveToFirst();
+        while(!c.isAfterLast()){
+        s= s+" "+c.getString(1);   //s=s+"\n"c.getString(1);   //Si on veut un retour a la ligne mais pas sur que ca fonctionne
         }
-         return s;
+        return s;
 
     }
-    public void create_Review(int id, String com){
+    public void create_Review(int id, String com){    //ok
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
+        String strDate = sdf.format(c.getTime());
         ContentValues newreview = new ContentValues();
-     //   newreview.put("User", login.getUtilisateur(););
+     //   newreview.put("User", login.getUtilisateur(););   //Besoin de récupérer le login de la personne
         newreview.put("Num", id);
-      //  newreview.put("Date", getDate(););
+        newreview.put("Date", strDate);
         newreview.put("Commentaire", com);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
+        be.lsinf1225.ezmeal.Database.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
-    public void create_Review(int id, int rate){
+    public void create_Review(int id, int rate){   //ok
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
+        String strDate = sdf.format(c.getTime());
         ContentValues newreview = new ContentValues();
     //    newreview.put("User", login.getUtilisateur(););
         newreview.put("Num", id);
-    //    newreview.put("Date", getDate(););
+        newreview.put("Date", strDate);
         newreview.put("Note", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
+        be.lsinf1225.ezmeal.Database.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
-    public void create_Review(int id, int rate, String com){
+    public void create_Review(int id, int rate, String com){   //ok
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/YYYY");
+        String strDate = sdf.format(c.getTime());
         ContentValues newreview = new ContentValues();
      //   newreview.put("User", login.getUtilisateur(););
         newreview.put("Num", id);
-     //   newreview.put("Date", getDate(););
+        newreview.put("Date", strDate);
         newreview.put("Commentaire", com);
         newreview.put("Note", rate);
-        be.lsinf1225.ezmeal.DBHelper.getWritableDatabase().insert("Review", null, newreview);
+        be.lsinf1225.ezmeal.Database.DBHelper.getWritableDatabase().insert("Review", null, newreview);
     }
 
-*/
+
 
 }
